@@ -115,12 +115,12 @@
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>${maven-pmd-plugin.version}</version>
+                <version>3.8</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.baeldung.pmd</groupId>
                         <artifactId>custom-pmd</artifactId>
-                        <version>${custom-pmd.version}</version>
+                        <version>3.8</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -131,7 +131,7 @@
                     <linkXRef>true</linkXRef>
                     <includeTests>true</includeTests>
                     <sourceEncoding>UTF-8</sourceEncoding>
-                    <targetJdk>${java.version}</targetJdk>
+                    <targetJdk>1.8</targetJdk>
                     <rulesets>
                         <ruleset>${tutorialsproject.basedir}/baeldung-pmd-rules.xml</ruleset>
                     </rulesets>
@@ -152,12 +152,12 @@
 			   <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>${maven-pmd-plugin.version}</version>
+                <version>3.8</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.baeldung.pmd</groupId>
                         <artifactId>custom-pmd</artifactId>
-                        <version>${custom-pmd.version}</version>
+                        <version>3.8</version>
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -168,7 +168,7 @@
                     <linkXRef>true</linkXRef>
                     <includeTests>true</includeTests>
                     <sourceEncoding>UTF-8</sourceEncoding>
-                    <targetJdk>${java.version}</targetJdk>
+                    <targetJdk>1.8</targetJdk>
                     <rulesets>
                         <ruleset>${tutorialsproject.basedir}/baeldung-pmd-rules.xml</ruleset>
                     </rulesets>
