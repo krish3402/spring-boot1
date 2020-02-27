@@ -109,19 +109,23 @@
 				</executions>
 			</plugin>
 			
+			<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-pmd-plugin</artifactId>
+    <configuration>
+        <linkXRef>true</linkXRef>
+        <sourceEncoding>ISO-8859-1</sourceEncoding>
+        <minimumTokens>30</minimumTokens>
+        <targetJdk>1.4</targetJdk>
+    </configuration>
+</plugin>
+			
 			
 		</plugins>
 		
 		
 	</build>
-	 <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </reporting>
+	
 
 
 
