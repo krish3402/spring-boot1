@@ -110,37 +110,13 @@
 			</plugin>
 			
 			<plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.8</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>net.sourceforge.pmd</groupId>
-                            <artifactId>pmd-core</artifactId>
-				<version>6.21.0</version>
-				
-                          
-                        </dependency>
-                        <dependency>
-                            <groupId>net.sourceforge.pmd</groupId>
-                            <artifactId>pmd-java</artifactId>
-				<version>6.21.0</version>
-                     
-                        </dependency>
-                        <dependency>
-                            <groupId>net.sourceforge.pmd</groupId>
-                            <artifactId>pmd-javascript</artifactId>
-				<version>6.21.0</version>
-                           
-                        </dependency>
-                        <dependency>
-                            <groupId>net.sourceforge.pmd</groupId>
-                            <artifactId>pmd-jsp</artifactId>
-				<version>6.21.0</version>
-                           
-                        </dependency>
-                    </dependencies>
-                </plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-pmd-plugin</artifactId>
+    <configuration>
+        <analysisCache>true</analysisCache> <!-- enable incremental analysis -->
+        <analysisCacheLocation>${project.build.directory}/pmd/pmd.cache</analysisCacheLocation> <!-- Optional: points to this location by default -->
+    </configuration>
+</plugin>
 			
 			
 		</plugins>
