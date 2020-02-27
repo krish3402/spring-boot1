@@ -113,11 +113,13 @@
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-pmd-plugin</artifactId>
     <configuration>
-        <linkXRef>true</linkXRef>
-        <sourceEncoding>ISO-8859-1</sourceEncoding>
-        <minimumTokens>30</minimumTokens>
-        <targetJdk>1.4</targetJdk>
-    </configuration>
+      
+					<destFile>${project.build.directory}</destFile>
+					<append>false</append>
+					<dataFile>${project.build.directory}/pmd.xml</dataFile>
+					<outputDirectory>${basedir}/target/pmd</outputDirectory>
+				</configuration>
+   
 </plugin>
 			
 			
