@@ -17,6 +17,38 @@
 		<version>1.4.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+	 <profiles>
+    <profile>
+      <!-- To be used during development. Run the command-->
+      <!-- mvn -Pno-validations install -->
+      <id>no-validations</id>
+      <properties>
+        <skipTests>true</skipTests>
+        <skipITs>true</skipITs>
+        <checkstyle.skip>true</checkstyle.skip>
+        <pmd.skip>true</pmd.skip>
+        <spotbugs.skip>true</spotbugs.skip>
+        <xml.skip>true</xml.skip>
+        <forbiddenapis.skip>true</forbiddenapis.skip>
+        <jacoco.skip>true</jacoco.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+      </properties>
+    </profile>
+    <profile>
+      <!-- To be used during wercker's sonarqube step. -->
+      <id>sonarqube-validations</id>
+      <properties>
+        <skipITs>true</skipITs>
+        <checkstyle.skip>true</checkstyle.skip>
+        <pmd.skip>true</pmd.skip>
+        <spotbugs.skip>true</spotbugs.skip>
+        <xml.skip>true</xml.skip>
+        <forbiddenapis.skip>true</forbiddenapis.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+      </properties>
+    </profile>
+  </profiles>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
