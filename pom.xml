@@ -173,7 +173,7 @@
   <executions>
     <execution>
       <configuration>
-        <destFile>${sonar.jacoco.reportPath}
+        <destFile>${sonar.jacoco.reportPath}</destFile>
       </configuration>
       <id>pre-test</id>
       <phase>process-test-classes</phase>
