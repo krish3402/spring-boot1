@@ -141,7 +141,8 @@
   <executions>
     <execution>
       <configuration>
-        <destFile>${sonar.jacoco.reportPath}</destFile>
+        <destFile>${sonar.jacoco.reportPath}/sonar.report.xml</destFile>
+	
       </configuration>
       <id>pre-test</id>
       <phase>process-test-classes</phase>
@@ -153,7 +154,7 @@
 
     <execution>
       <configuration>
-        <destFile>${sonar.jacoco.itReportPath}</destFile>
+        <destFile>${sonar.jacoco.itReportPath}/sonar.itreport.xml</destFile>
       </configuration>
       <id>pre-itest</id>
       <phase>pre-integration-test</phase>
