@@ -114,39 +114,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>build-helper-maven-plugin</artifactId>
-  <version>1.8</version>
-  <executions>
-    <execution>
-      <id>add-test-source</id>
-      <phase>process-test-sources</phase>
-      <goals>
-        <goal>add-test-source</goal>
-      </goals>
-      <configuration>
-        <sources>
-          src/it/java
-        </sources>
-      </configuration>
-     </execution>
-     <execution>
-       <id>add-test-resources</id>
-       <phase>generate-test-resources</phase>
-       <goals>
-         <goal>add-test-resource</goal>
-       </goals>
-       <configuration>
-          <resources>
-            <resource>
-              src/it/resources
-            </resource>
-          </resources>
-       </configuration>
-     </execution>
-   </executions>
- </plugin>
+			
 	
 	<plugin>
   <groupId>org.jacoco</groupId>
