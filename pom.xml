@@ -182,7 +182,7 @@
       </goals>
     </execution>
 <!-- we want to execute <span class="hiddenSpellError" pre="execute " data-mce-bogus="1">jacoco</span>:prepare-agent-integration in test phase,-->
-but before executing maven failsafe plugin -->
+
     <execution>
       <configuration>
         <destFile>${sonar.jacoco.itReportPath}</destFile>
