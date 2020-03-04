@@ -129,11 +129,14 @@
       <exclude>*Test</exclude>
     </excludes>
         <limits>
-          <limit>
+<!---       
+		<limit>
             <counter>INSTRUCTION</counter>
             <value>COVEREDRATIO</value>		  
-            <minimum>90%</minimum>
-          </limit>
+            <minimum>50%</minimum>
+          </limit>  -->
+
+
 		 <limit>
         <counter>LINE</counter>
         <value>COVEREDRATIO</value>
