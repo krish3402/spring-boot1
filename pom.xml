@@ -127,11 +127,14 @@
 	 <element>CLASS</element>
 	 <element>METHOD</element>	      
 	 <element>GROUP</element>
-	      
+	 <element>SOURCEFILE</element>     
+	     
+	<!---      
 	      <excludes>
       <exclude>*Test</exclude>
     </excludes>
         <limits>
+-->
 <!---       
 		<limit>
             <counter>INSTRUCTION</counter>
