@@ -125,6 +125,8 @@
       <rule>
         <element>BUNDLE</element>
 	 <element>CLASS</element>
+	  <element>GROUP</element>
+	      
 	      <excludes>
       <exclude>*Test</exclude>
     </excludes>
