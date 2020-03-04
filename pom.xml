@@ -127,7 +127,9 @@
 	 <element>CLASS</element>
 	 <element>METHOD</element>	      
 	 <element>GROUP</element>
-	 <element>SOURCEFILE</element>     
+	 <element>SOURCEFILE</element>
+	<element>PACKAGE</element> 
+	 
 	     
 	<!---      
 	      <excludes>
