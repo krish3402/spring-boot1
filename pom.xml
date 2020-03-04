@@ -117,7 +117,7 @@
 						<phase>prepare-package</phase>
 						<goals>
 							<goal>report</goal>
-							 <goal>check</goal>
+							
 						</goals>
 		
 			
