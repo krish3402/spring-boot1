@@ -133,8 +133,9 @@
 	      <excludes>
       <exclude>*Test</exclude>
     </excludes>
-        <limits>
+       
 -->
+ <limits>	      
 <!---       
 		<limit>
             <counter>INSTRUCTION</counter>
