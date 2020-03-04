@@ -139,7 +139,7 @@
             <counter>INSTRUCTION</counter>
             <value>COVEREDRATIO</value>
 		  
-            <minimum>50%</minimum>
+            <minimum>80%</minimum>
           </limit>
 		 <limit>
         <counter>LINE</counter>
